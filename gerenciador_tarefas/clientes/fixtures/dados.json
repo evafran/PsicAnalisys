@@ -1,0 +1,1117 @@
+[
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 1,
+      "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 2,
+      "fields": {
+        "app_label": "auth",
+        "model": "permission"
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 3,
+      "fields": {
+        "app_label": "auth",
+        "model": "group"
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 4,
+      "fields": {
+        "app_label": "auth",
+        "model": "user"
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 5,
+      "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 6,
+      "fields": {
+        "app_label": "sessions",
+        "model": "session"
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 7,
+      "fields": {
+        "app_label": "app",
+        "model": "tarefa"
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 8,
+      "fields": {
+        "app_label": "app",
+        "model": "professor"
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 9,
+      "fields": {
+        "app_label": "app",
+        "model": "aluno"
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 10,
+      "fields": {
+        "app_label": "app",
+        "model": "questionario"
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 11,
+      "fields": {
+        "app_label": "app",
+        "model": "resposta"
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 12,
+      "fields": {
+        "app_label": "app",
+        "model": "testes"
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 13,
+      "fields": {
+        "app_label": "app",
+        "model": "disciplina"
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 14,
+      "fields": {
+        "app_label": "app",
+        "model": "complementouser"
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 15,
+      "fields": {
+        "app_label": "app",
+        "model": "music"
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 16,
+      "fields": {
+        "app_label": "clientes",
+        "model": "cliente"
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 17,
+      "fields": {
+        "app_label": "clientes",
+        "model": "endereco"
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 18,
+      "fields": {
+        "app_label": "clientes",
+        "model": "pedidos"
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 19,
+      "fields": {
+        "app_label": "clientes",
+        "model": "produto"
+      }
+    },
+    {
+      "model": "sessions.session",
+      "pk": "2hcrt6cgqsa8tym39hs7v57jl4xiirku",
+      "fields": {
+        "session_data": "OTA0MzllYWQ4OThhOTBiNDViZDc4YzFmYTkxNjA3NzBhM2QzYzgwMzp7fQ==",
+        "expire_date": "2020-01-13T22:24:51.223Z"
+      }
+    },
+    {
+      "model": "sessions.session",
+      "pk": "4g4qokruapjjsv3373x2lenymbov2fck",
+      "fields": {
+        "session_data": "NjA1MjZkNDQ4MWU1OWJlNDIzMjUyYjdhMzBmMTgwMjZmNzFlMzQyMzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI5MGY0MWM1MWE1NTc4YTEwYzA2NWRlNzFiMmU5NGM3MmM4NTBlMTRhIn0=",
+        "expire_date": "2019-11-23T16:57:26.390Z"
+      }
+    },
+    {
+      "model": "sessions.session",
+      "pk": "8s5wldip1jb53iljnyjwnvev53iqmro7",
+      "fields": {
+        "session_data": "OTA0MzllYWQ4OThhOTBiNDViZDc4YzFmYTkxNjA3NzBhM2QzYzgwMzp7fQ==",
+        "expire_date": "2020-01-13T22:24:21.359Z"
+      }
+    },
+    {
+      "model": "sessions.session",
+      "pk": "9k060q71ol6xfu6s0x3xn7cbjxgqw5gg",
+      "fields": {
+        "session_data": "YTI2ZTYzYzc1ZDljMjczODY0MWQ3ODFiYTBmNjM3YmE4N2Q5ZDAxMzp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI0YWE5NjZlNmU4M2VmM2Q1ZDMxMGQ2YjczYzNhY2ZjZDEzY2NjYTU5In0=",
+        "expire_date": "2019-12-02T18:52:19.016Z"
+      }
+    },
+    {
+      "model": "sessions.session",
+      "pk": "nl873cpbz1xvh8crz01e7h7mqfzp0lb5",
+      "fields": {
+        "session_data": "YTI2ZTYzYzc1ZDljMjczODY0MWQ3ODFiYTBmNjM3YmE4N2Q5ZDAxMzp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI0YWE5NjZlNmU4M2VmM2Q1ZDMxMGQ2YjczYzNhY2ZjZDEzY2NjYTU5In0=",
+        "expire_date": "2019-12-16T19:05:42.324Z"
+      }
+    },
+    {
+      "model": "sessions.session",
+      "pk": "rlr1f5zdrjohh479zbna0845jju1b36o",
+      "fields": {
+        "session_data": "NWI5ZWVlZDJiZDM0YmE0ZDczNzA0ZWNjN2IxZjU4ZDkyYTg0ZTJhMjp7Il9hdXRoX3VzZXJfaWQiOiI2IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJjZTVjNjFlYjQwYWJlMGZmOWMzMGQ1ZmJlZWRmMmU4YmFhM2RhODIyIn0=",
+        "expire_date": "2020-01-17T19:32:31.086Z"
+      }
+    },
+    {
+      "model": "clientes.endereco",
+      "pk": 3,
+      "fields": {
+        "rua": "avenida padre caio",
+        "numero": 199,
+        "complemento": "casa",
+        "bairro": "arraiolos",
+        "cidade": "Diamantina",
+        "pais": "Brasil"
+      }
+    },
+    {
+      "model": "clientes.endereco",
+      "pk": 4,
+      "fields": {
+        "rua": "avenida padre caio",
+        "numero": 199,
+        "complemento": "ap",
+        "bairro": "lagoa",
+        "cidade": "Diamantina",
+        "pais": "Brasil"
+      }
+    },
+    {
+      "model": "clientes.endereco",
+      "pk": 5,
+      "fields": {
+        "rua": "avenida padre caio",
+        "numero": 10,
+        "complemento": "casa",
+        "bairro": "lagoa",
+        "cidade": "Diamantina",
+        "pais": "Brasil"
+      }
+    },
+    {
+      "model": "clientes.endereco",
+      "pk": 6,
+      "fields": {
+        "rua": "avenida padre caio",
+        "numero": 200,
+        "complemento": "casa",
+        "bairro": "diamante",
+        "cidade": "Diamantina",
+        "pais": "Brasil"
+      }
+    },
+    {
+      "model": "clientes.produto",
+      "pk": 1,
+      "fields": {
+        "nome": "batata",
+        "descricao": "batata fina da marca yahou",
+        "valor": 12.0
+      }
+    },
+    {
+      "model": "clientes.produto",
+      "pk": 2,
+      "fields": {
+        "nome": "hamburguer",
+        "descricao": "batata fina da marca yahou",
+        "valor": 12.0
+      }
+    },
+    {
+      "model": "clientes.produto",
+      "pk": 2,
+      "fields": {
+        "nome": "lingui\u00e7a",
+        "descricao": "seara",
+        "valor": 28.0
+      }
+    },
+    {
+      "model": "clientes.pedidos",
+      "pk": 1,
+      "fields": {
+        "cliente": 1,
+        "data_pedido": "2020-01-17T00:57:42Z",
+        "valor": 10.0,
+        "status": "F",
+        "observacoes": "batata frita",
+        "produtos": [
+          1
+        ]
+      }
+    },
+    {
+      "model": "clientes.pedidos",
+      "pk": 2,
+      "fields": {
+        "cliente": 5,
+        "data_pedido": "2020-01-17T01:03:51Z",
+        "valor": 15.0,
+        "status": "E",
+        "observacoes": "batata palha com frango",
+        "produtos": []
+      }
+    },
+    {
+      "model": "clientes.pedidos",
+      "pk": 6,
+      "fields": {
+        "cliente": 1,
+        "data_pedido": "2020-01-17T17:46:09Z",
+        "valor": 12.0,
+        "status": "P",
+        "observacoes": "sorvete",
+        "produtos": [
+          2
+        ]
+      }
+    },
+    {
+      "model": "clientes.pedidos",
+      "pk": 7,
+      "fields": {
+        "cliente": 5,
+        "data_pedido": "2020-01-17T20:06:10Z",
+        "valor": 39.0,
+        "status": "P",
+        "observacoes": "batata frita",
+        "produtos": [
+          1
+        ]
+      }
+    },
+    {
+      "model": "clientes.pedidos",
+      "pk": 8,
+      "fields": {
+        "cliente": 5,
+        "data_pedido": "2020-01-18T21:33:46Z",
+        "valor": 34.0,
+        "status": "P",
+        "observacoes": "pizza",
+        "produtos": [
+          2
+        ]
+      }
+    },
+    {
+      "model": "clientes.pedidos",
+      "pk": 9,
+      "fields": {
+        "cliente": 5,
+        "data_pedido": "2020-01-20T11:28:35Z",
+        "valor": 40.0,
+        "status": "F",
+        "observacoes": "farofa",
+        "produtos": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "model": "clientes.cliente",
+      "pk": 1,
+      "fields": {
+        "nome": "matheus andrade",
+        "data_nascimento": "1997-07-02",
+        "email": "matheus_afl@hotmail.com",
+        "profissao": "analista",
+        "sexo": "M",
+        "endereco": 4
+      }
+    },
+    {
+      "model": "clientes.cliente",
+      "pk": 5,
+      "fields": {
+        "nome": "pedro",
+        "data_nascimento": "1997-07-02",
+        "email": "matheus_afl@hotmail.com",
+        "profissao": "analista",
+        "sexo": "M",
+        "endereco": 5
+      }
+    },
+    {
+      "model": "clientes.cliente",
+      "pk": 6,
+      "fields": {
+        "nome": "lira",
+        "data_nascimento": "1997-07-02",
+        "email": "lira@hotmail.com",
+        "profissao": "analista de banco de dados",
+        "sexo": "F",
+        "endereco": 6
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 1,
+      "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 2,
+      "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 3,
+      "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 4,
+      "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 5,
+      "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 6,
+      "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 7,
+      "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 8,
+      "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 9,
+      "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 10,
+      "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 11,
+      "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 12,
+      "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 13,
+      "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 14,
+      "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 15,
+      "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 16,
+      "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 17,
+      "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 18,
+      "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 19,
+      "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 20,
+      "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 21,
+      "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 22,
+      "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 23,
+      "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 24,
+      "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 25,
+      "fields": {
+        "name": "Can add tarefa",
+        "content_type": 7,
+        "codename": "add_tarefa"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 26,
+      "fields": {
+        "name": "Can change tarefa",
+        "content_type": 7,
+        "codename": "change_tarefa"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 27,
+      "fields": {
+        "name": "Can delete tarefa",
+        "content_type": 7,
+        "codename": "delete_tarefa"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 28,
+      "fields": {
+        "name": "Can view tarefa",
+        "content_type": 7,
+        "codename": "view_tarefa"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 29,
+      "fields": {
+        "name": "Can add professor",
+        "content_type": 8,
+        "codename": "add_professor"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 30,
+      "fields": {
+        "name": "Can change professor",
+        "content_type": 8,
+        "codename": "change_professor"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 31,
+      "fields": {
+        "name": "Can delete professor",
+        "content_type": 8,
+        "codename": "delete_professor"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 32,
+      "fields": {
+        "name": "Can view professor",
+        "content_type": 8,
+        "codename": "view_professor"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 33,
+      "fields": {
+        "name": "Can add aluno",
+        "content_type": 9,
+        "codename": "add_aluno"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 34,
+      "fields": {
+        "name": "Can change aluno",
+        "content_type": 9,
+        "codename": "change_aluno"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 35,
+      "fields": {
+        "name": "Can delete aluno",
+        "content_type": 9,
+        "codename": "delete_aluno"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 36,
+      "fields": {
+        "name": "Can view aluno",
+        "content_type": 9,
+        "codename": "view_aluno"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 37,
+      "fields": {
+        "name": "Can add questionario",
+        "content_type": 10,
+        "codename": "add_questionario"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 38,
+      "fields": {
+        "name": "Can change questionario",
+        "content_type": 10,
+        "codename": "change_questionario"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 39,
+      "fields": {
+        "name": "Can delete questionario",
+        "content_type": 10,
+        "codename": "delete_questionario"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 40,
+      "fields": {
+        "name": "Can view questionario",
+        "content_type": 10,
+        "codename": "view_questionario"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 41,
+      "fields": {
+        "name": "Can add resposta",
+        "content_type": 11,
+        "codename": "add_resposta"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 42,
+      "fields": {
+        "name": "Can change resposta",
+        "content_type": 11,
+        "codename": "change_resposta"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 43,
+      "fields": {
+        "name": "Can delete resposta",
+        "content_type": 11,
+        "codename": "delete_resposta"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 44,
+      "fields": {
+        "name": "Can view resposta",
+        "content_type": 11,
+        "codename": "view_resposta"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 45,
+      "fields": {
+        "name": "Can add testes",
+        "content_type": 12,
+        "codename": "add_testes"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 46,
+      "fields": {
+        "name": "Can change testes",
+        "content_type": 12,
+        "codename": "change_testes"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 47,
+      "fields": {
+        "name": "Can delete testes",
+        "content_type": 12,
+        "codename": "delete_testes"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 48,
+      "fields": {
+        "name": "Can view testes",
+        "content_type": 12,
+        "codename": "view_testes"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 49,
+      "fields": {
+        "name": "Can add disciplina",
+        "content_type": 13,
+        "codename": "add_disciplina"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 50,
+      "fields": {
+        "name": "Can change disciplina",
+        "content_type": 13,
+        "codename": "change_disciplina"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 51,
+      "fields": {
+        "name": "Can delete disciplina",
+        "content_type": 13,
+        "codename": "delete_disciplina"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 52,
+      "fields": {
+        "name": "Can view disciplina",
+        "content_type": 13,
+        "codename": "view_disciplina"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 53,
+      "fields": {
+        "name": "Can add complemento user",
+        "content_type": 14,
+        "codename": "add_complementouser"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 54,
+      "fields": {
+        "name": "Can change complemento user",
+        "content_type": 14,
+        "codename": "change_complementouser"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 55,
+      "fields": {
+        "name": "Can delete complemento user",
+        "content_type": 14,
+        "codename": "delete_complementouser"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 56,
+      "fields": {
+        "name": "Can view complemento user",
+        "content_type": 14,
+        "codename": "view_complementouser"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 57,
+      "fields": {
+        "name": "Can add music",
+        "content_type": 15,
+        "codename": "add_music"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 58,
+      "fields": {
+        "name": "Can change music",
+        "content_type": 15,
+        "codename": "change_music"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 59,
+      "fields": {
+        "name": "Can delete music",
+        "content_type": 15,
+        "codename": "delete_music"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 60,
+      "fields": {
+        "name": "Can view music",
+        "content_type": 15,
+        "codename": "view_music"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 61,
+      "fields": {
+        "name": "Can add cliente",
+        "content_type": 16,
+        "codename": "add_cliente"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 62,
+      "fields": {
+        "name": "Can change cliente",
+        "content_type": 16,
+        "codename": "change_cliente"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 63,
+      "fields": {
+        "name": "Can delete cliente",
+        "content_type": 16,
+        "codename": "delete_cliente"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 64,
+      "fields": {
+        "name": "Can view cliente",
+        "content_type": 16,
+        "codename": "view_cliente"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 65,
+      "fields": {
+        "name": "Can add endereco",
+        "content_type": 17,
+        "codename": "add_endereco"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 66,
+      "fields": {
+        "name": "Can change endereco",
+        "content_type": 17,
+        "codename": "change_endereco"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 67,
+      "fields": {
+        "name": "Can delete endereco",
+        "content_type": 17,
+        "codename": "delete_endereco"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 68,
+      "fields": {
+        "name": "Can view endereco",
+        "content_type": 17,
+        "codename": "view_endereco"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 69,
+      "fields": {
+        "name": "Can add pedidos",
+        "content_type": 18,
+        "codename": "add_pedidos"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 70,
+      "fields": {
+        "name": "Can change pedidos",
+        "content_type": 18,
+        "codename": "change_pedidos"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 71,
+      "fields": {
+        "name": "Can delete pedidos",
+        "content_type": 18,
+        "codename": "delete_pedidos"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 72,
+      "fields": {
+        "name": "Can view pedidos",
+        "content_type": 18,
+        "codename": "view_pedidos"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 73,
+      "fields": {
+        "name": "Can add produto",
+        "content_type": 19,
+        "codename": "add_produto"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 74,
+      "fields": {
+        "name": "Can change produto",
+        "content_type": 19,
+        "codename": "change_produto"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 75,
+      "fields": {
+        "name": "Can delete produto",
+        "content_type": 19,
+        "codename": "delete_produto"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 76,
+      "fields": {
+        "name": "Can view produto",
+        "content_type": 19,
+        "codename": "view_produto"
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 6,
+      "fields": {
+        "password": "pbkdf2_sha256$150000$QgXgoFH3lyae$OwdEZumLiEpjUBMTGZR/WglOE0aWCCBbN7fBbefbAXM=",
+        "last_login": "2020-01-03T19:32:30.983Z",
+        "is_superuser": false,
+        "username": "matheusA",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-01-02T12:23:53.348Z",
+        "groups": [],
+        "user_permissions": []
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 7,
+      "fields": {
+        "password": "pbkdf2_sha256$150000$lnvzFcIOeNDw$OqWW/JsRCTShFUyI7yUpD6T4GmuGPYu5IgLaNV7XUdQ=",
+        "last_login": "2020-01-03T16:53:51.549Z",
+        "is_superuser": false,
+        "username": "matheusAndrade",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-01-03T16:52:22.339Z",
+        "groups": [],
+        "user_permissions": []
+      }
+    }
+    ]
+    

@@ -1,0 +1,38 @@
+{% extends 'base.html'%}
+{% block conteudo %}
+{% csrf_token %}
+
+<h1>Listagem de Tarefas</h1>
+
+{% for x in tarefas %}
+
+<div class="card mb-3">
+    <div class ="card-header">
+            {{x.get_prioridade_display}}
+    </div>
+    <div class = "card-body">
+        <h5 class="card-title">{{x.titulo}}</h5>
+        <p class="card-text">{{x.descricao}}</p>
+        <p class="card-text">{{x.data_expiracao}}</p>
+        <a href="editar_tarefa/{{x.id}}">Alterar</a>
+        <a href="remover_tarefa/{{x.usuario_id}}">Remover</a>
+
+        <!-- <div>
+            <select>
+                {% for x in alunos %}
+                <option value="{{  x.pk }}">{{ x.nome }}</option>
+                {% endfor %}
+            </select>
+                {{ request.user.username }}
+            </div> -->
+       
+    </div>
+
+</div>
+
+{% endfor%}
+
+<a href="/cadastrar_tarefa"><input type = "button" class="btn btn-primary mb-3" value="Cadastrar Tarefa"></a>
+
+
+{% endblock conteudo%}

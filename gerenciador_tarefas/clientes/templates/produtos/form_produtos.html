@@ -1,0 +1,34 @@
+{% extends 'adminlte/base.html' %}
+
+{% load meus_filtros%}
+{%block title%}
+Cadastrar Produto
+{%endblock title%}
+
+{%block content%}
+    <form method="POST">
+        {% csrf_token %}
+        <div class = "form-group">
+            {{form_produto.nome.errors}}
+            <label>nome:</label>
+            {{form_produto.nome|addclass:'form-control'}}
+        </div>
+        <div class = "form-group">
+            {{form_produto.descricao.errors}}
+            <label>descricao:</label>
+            {{form_produto.descricao|addclass:'form-control'}}
+        </div>
+        <div class = "form-group">
+            {{form_produto.valor.errors}}
+            <label>valor:</label>
+            {{form_produto.valor|addclass:'form-control'}}
+        </div>
+       
+        <div class = "form-group">
+
+            <input type="submit" name = "Cadastrar">
+
+        </div>
+
+    </form>
+{%endblock content%} 

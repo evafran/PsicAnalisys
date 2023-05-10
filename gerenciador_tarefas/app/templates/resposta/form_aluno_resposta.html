@@ -1,0 +1,75 @@
+{% extends 'base.html'%}
+{% block conteudo %}
+
+<h2>Estados dos Egos</h2>
+<form method="POST">
+    {% csrf_token %}
+
+    <!-- <select>
+        
+        {% for x in alunos %}
+
+        <option value="{{x.nome}}">{{x.id}}</option>
+        <option value="{{x.id}}">{{x.nome}}</option>
+       
+        {% endfor %}
+
+    </select> -->
+  
+  
+    {% for pergunta in questionarios %}
+        <form method="post">
+              <div class="card mb-3">
+                    <div class ="card-header">
+                      {{pergunta.pergunta}} 
+                    </div>
+                    <div class = "container">
+                    <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                          Muito raramente
+                        </font></font></label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        As vezes
+                        </label>
+                      </div>
+
+                      <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                            Frequentemente
+                          </font></font></label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                            sempre
+                          </font></font></label>
+                        </div>
+                      </div>
+                        <p class="card-text">Nome do Teste : {{pergunta.get_tipo_display}}</p>
+                        <p class="card-text">ID : {{pergunta.id}}</p>
+                        <p class="card-text">ID : {{request.user.pk}}</p>
+                        
+                        <!-- <a href="editar_tarefa/{{x.id}}">Alterar</a>
+                        <a href="remover_tarefa/{{x.id}}">Remover</a>
+                        -->
+                    </div>
+
+
+                           
+                </form>
+              {% endfor %}
+
+              <div class = "form_group">
+                    <input type = "submit" value = "salvar">
+            </div>
+
+
+</form>
+
+
+{% endblock conteudo %}

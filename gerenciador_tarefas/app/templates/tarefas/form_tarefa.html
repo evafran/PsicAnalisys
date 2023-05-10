@@ -1,0 +1,43 @@
+{% extends 'base.html'%}
+{% block conteudo %}
+
+<h2>Cadastrar Tarefa</h2>
+<div class="container">
+
+<form method="POST">
+    
+    {% csrf_token %}
+
+    <div class="form_group">
+        {{form_tarefa.titulo.errors}}
+        <label>Titulo:</label>
+        {{form_tarefa.titulo}}
+    </div>
+    <div class="form_group">
+        
+        {{form_tarefa.descricao.errors}}
+
+        <label>Descricao:</label>
+        <div>
+        {{form_tarefa.descricao}}
+        </div>
+    </div>
+    <div class="form_group">
+        {{form_tarefa.data_expiracao.errors}}
+
+        <label>Data: Formato _/ /_</label>
+        {{form_tarefa.data_expiracao}}
+    </div>
+    <div class="form_group">
+        {{form_tarefa.prioridade.errors}}
+
+        <label>Prioridade:</label>
+        {{form_tarefa.prioridade}}
+    </div>
+    <div class = "form_group">
+            <input type = "submit" value = "salvar">
+    </div>
+            
+</form>
+</div>
+{% endblock conteudo%}

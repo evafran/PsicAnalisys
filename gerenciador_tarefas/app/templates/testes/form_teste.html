@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+{% block conteudo %}
+
+<div class="container">
+<form method="POST">
+    
+    {% csrf_token %}
+
+    <div class="form_group">
+        {{perguntaForm.pergunta.errors}}
+        <label>Pergunta</label>
+        {{perguntaForm.pergunta}}
+    </div>
+    <div class="form_group">
+        
+        {{perguntaForm.tipo.errors}}
+
+        <label>tipo</label>
+        {{perguntaForm.tipo}}
+    </div>
+    
+    <div class = "form_group">
+            <input type = "submit" value = "salvar">
+    </div>
+            
+</form>
+</div>
+{% endblock conteudo%}

@@ -1,0 +1,33 @@
+{% extends 'base.html'%}
+{% block conteudo %}
+{% csrf_token %}
+
+<h1>Dados do Aluno</h1>
+
+{% for x in alunos %}
+
+
+
+
+
+<div class="card mb-3">
+    <div class ="card-header">
+
+    </div>
+    <div class = "card-body">
+        <h5 class="card-title">{{x.nome}}</h5>
+        <p class="card-text">{{x.senha}}</p>
+        <p class="card-text">{{x.id}}</p>
+        <a href="editar_tarefa/{{x.id}}">Alterar</a>
+        <a href="remover_tarefa/{{x.id}}">Remover</a>
+       
+    </div>
+
+</div>
+
+{% endfor%}
+
+<a href="/cadastrar_tarefa"><input type = "button" class="btn btn-primary mb-3" value="Cadastrar Tarefa"></a>
+
+
+{% endblock conteudo%}

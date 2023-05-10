@@ -1,0 +1,65 @@
+
+{% extends 'base.html'%}
+{% block conteudo %}
+
+<link href="./style.css" rel="stylesheet">
+
+<h2>Cadastro de Professores</h2>
+
+
+<form method="POST">
+    {% csrf_token %}
+    <main>
+    <div class="center">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text">
+                  Complete os campos abaixo para cadastrar-se
+                </p>
+      
+                  <!-- Nome -->
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        {{form_professor.username.errors}}
+                      <span class="input-group-text">Nome</span>
+                        {{form_professor.nome}}
+                    </div>
+                     </div>
+      
+                  <!-- Senha-->
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    {{form_professor.password.errors}}
+                      <span class="input-group-text">Senha</span>
+                    {{form_professor.senha}}
+                    </div>
+                    </div>
+                  <!--Confirmar senha-->
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      {{form_professor.password2.errors}}
+                      <span class="input-group-text">Confirmar Senha</span>
+                      {{form_professor.confirmarSenha}}
+                    </div>
+                    </div>
+      
+                  
+                   <div class="form-group">
+                    <input type="submit" value="cadastrar" class="btn btn-primary">
+                </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</form>
+
+
+{% endblock conteudo %}

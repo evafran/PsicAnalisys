@@ -1,0 +1,844 @@
+{% extends 'base.html'%}
+{% block conteudo %}
+
+<section class="content-header" >
+        <h1>
+          Estados dos Egos
+  
+          <small>Version 0.1</small>
+        </h1>
+        <ol class="breadcrumb">
+          <li><a href=""><i class="fa fa-dashboard"></i> </a></li>
+        </ol>
+  
+      
+      </section>
+
+<form method="POST">
+    
+    {% csrf_token %}
+    <div class="row">
+        
+            <div class="col-md-6">
+              <!-- Horizontal Form -->
+              <div class="box box-info">
+                <div class="box-header with-border">
+                  <h3 class="box-title">  </h3>
+                </div>
+                <!-- /.box-header -->
+                <!-- form start -->
+                <form class="form_group">
+                  <div class = "cardb-ody">
+                  <h4> <p> 1) Tem movimentos firmes e ativos - eficazes? </p> </h4>
+                   
+                  <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>Muito raramente </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                       <p> As vezes </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>  Frequentemente </p>
+                      </font></font></label>
+                      <div>
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p> sempre</p>
+                      </font></font></label>
+                      </div>
+                  </div>
+                </form>
+              </div>
+                <form class="form_group">
+    
+                  <h4> <p> 2) Analiza bem a realidade e toma decisões? </p> </h4>
+                   
+                  <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>Muito raramente </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                       <p> As vezes </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>  Frequentemente </p>
+                      </font></font></label>
+                      <div>
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p> sempre</p>
+                      </font></font></label>
+                      </div>
+                  </div>
+                </form>
+    
+                <form class="form-horizontal">
+    
+                  <h4> <p> 3) Conversa com o parceiro em postura correta, encarando-o?</p> </h4>
+                   
+                  <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>Muito raramente </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                       <p> As vezes </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>  Frequentemente </p>
+                      </font></font></label>
+                      <div>
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p> sempre</p>
+                      </font></font></label>
+                      </div>
+                  </div>
+                </form>
+    
+                <form class="form-horizontal">
+    
+                  <h4> <p> 4) Costuma perguntar: "por que? como?" </p> </h4>
+                   
+                  <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>Muito raramente </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                       <p> As vezes </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>  Frequentemente </p>
+                      </font></font></label>
+                      <div>
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p> sempre</p>
+                      </font></font></label>
+                      </div>
+                  </div>
+                </form>
+    
+                <form class="form-horizontal">
+    
+                  <h4> <p> 5) Julga Corretamente os fatos?</p> </h4>
+                   
+                  <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>Muito raramente </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                       <p> As vezes </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>  Frequentemente </p>
+                      </font></font></label>
+                      <div>
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p> sempre</p>
+                      </font></font></label>
+                      </div>
+                  </div>
+                </form>
+    
+                <form class="form-horizontal">
+    
+                  <h4> <p> 6) Colhe várias informações (fatos) e os analiza bem? </p> </h4>
+                   
+                  <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>Muito raramente </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                       <p> As vezes </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>  Frequentemente </p>
+                      </font></font></label>
+                      <div>
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p> sempre</p>
+                      </font></font></label>
+                      </div>
+                  </div>
+                </form>
+    
+                <form class="form-horizontal">
+    
+                  <h4> <p> 7) Julga os fatos sem interferir a sua opinião pessoal? </p> </h4>
+                   
+                  <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>Muito raramente </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                       <p> As vezes </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>  Frequentemente </p>
+                      </font></font></label>
+                      <div>
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p> sempre</p>
+                      </font></font></label>
+                      </div>
+                  </div>
+                </form>
+    
+    
+                <form class="form-horizontal">
+    
+                  <h4> <p> 8) Sempre planejaconscientemente antes de agira? </p> </h4>
+                   
+                  <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>Muito raramente </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                       <p> As vezes </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>  Frequentemente </p>
+                      </font></font></label>
+                      <div>
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p> sempre</p>
+                      </font></font></label>
+                      </div>
+                  </div>
+                </form>
+    
+    
+    
+                <form class="form-horizontal">
+    
+                  <h4> <p> 9) Não se torna emotivo numa conversa </p> </h4>
+                   
+                  <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>Muito raramente </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                       <p> As vezes </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>  Frequentemente </p>
+                      </font></font></label>
+                      <div>
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p> sempre</p>
+                      </font></font></label>
+                      </div>
+                  </div>
+                </form>
+    
+                <form class="form-horizontal">
+    
+                  <h4> <p> 10) dialoga facilmente com qualquer pessoa</p> </h4>
+                   
+                  <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>Muito raramente </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                       <p> As vezes </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>  Frequentemente </p>
+                      </font></font></label>
+                      <div>
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p> sempre</p>
+                      </font></font></label>
+                      </div>
+                  </div>
+                </form>
+                <!-- final Adulto -->
+    
+    
+                <!-- inicio Pai Nutritivo -->
+    
+                <form class="form-horizontal">
+    
+                  <h4> <p> 11) Percebe as qualidades alheias e as ressalta? </p> </h4>
+                   
+                  <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>Muito raramente </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                       <p> As vezes </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>  Frequentemente </p>
+                      </font></font></label>
+                      <div>
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p> sempre</p>
+                      </font></font></label>
+                      </div>
+                  </div>
+                </form>
+    
+                <form class="form-horizontal">
+    
+                  <h4> <p> 12) Interessa-se pelas conversas alheias </p> </h4>
+                   
+                  <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>Muito raramente </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                       <p> As vezes </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>  Frequentemente </p>
+                      </font></font></label>
+                      <div>
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p> sempre</p>
+                      </font></font></label>
+                      </div>
+                  </div>
+                </form>
+    
+                <form class="form-horizontal">
+    
+                  <h4> <p> 13) É extremamente atencioso com os outros </p> </h4>
+                   
+                  <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>Muito raramente </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                       <p> As vezes </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>  Frequentemente </p>
+                      </font></font></label>
+                      <div>
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p> sempre</p>
+                      </font></font></label>
+                      </div>
+                  </div>
+                </form>
+                <form class="form-horizontal">
+    
+                  <h4> <p> 14) Gosta de ajudar os outros?</p> </h4>
+                   
+                  <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>Muito raramente </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                       <p> As vezes </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>  Frequentemente </p>
+                      </font></font></label>
+                      <div>
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p> sempre</p>
+                      </font></font></label>
+                      </div>
+                  </div>
+                </form>
+    
+                <form class="form-horizontal">
+    
+                  <h4> <p> 15) Cozinha lava e limpa por iniciativa própria? </p> </h4>
+                   
+                  <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>Muito raramente </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                       <p> As vezes </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>  Frequentemente </p>
+                      </font></font></label>
+                      <div>
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p> sempre</p>
+                      </font></font></label>
+                      </div>
+                  </div>
+                </form>
+                <form class="form-horizontal">
+    
+                  <h4> <p> 16) Sempre que vê uma pessoa em dificuldades consola-a? </p> </h4>
+                   
+                  <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>Muito raramente </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                       <p> As vezes </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>  Frequentemente </p>
+                      </font></font></label>
+                      <div>
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p> sempre</p>
+                      </font></font></label>
+                      </div>
+                  </div>
+                </form>
+    
+                <form class="form-horizontal">
+    
+                  <h4> <p> 17) Assume a liderança do trabalho em atividades coletivas </p> </h4>
+                   
+                  <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>Muito raramente </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                       <p> As vezes </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>  Frequentemente </p>
+                      </font></font></label>
+                      <div>
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p> sempre</p>
+                      </font></font></label>
+                      </div>
+                  </div>
+                </form>
+                <form class="form-horizontal">
+    
+                  <h4> <p> 18) é maleável</p> </h4>
+                   
+                  <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>Muito raramente </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                       <p> As vezes </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>  Frequentemente </p>
+                      </font></font></label>
+                      <div>
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p> sempre</p>
+                      </font></font></label>
+                      </div>
+                  </div>
+                </form>
+    
+                <form class="form-horizontal">
+    
+                  <h4> <p> 19) Perdoa com sinceridade as falhas alheias? </p> </h4>
+                   
+                  <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>Muito raramente </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                       <p> As vezes </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>  Frequentemente </p>
+                      </font></font></label>
+                      <div>
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p> sempre</p>
+                      </font></font></label>
+                      </div>
+                  </div>
+                </form>
+    
+                <form class="form-horizontal">
+    
+                  <h4> <p> 20) não consegue recusar um pedido </p> </h4>
+                   
+                  <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>Muito raramente </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                       <p> As vezes </p>
+                      </font></font></label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p>  Frequentemente </p>
+                      </font></font></label>
+                      <div>
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        <p> sempre</p>
+                      </font></font></label>
+                      </div>
+                  </div>
+                </form>
+                          <!-- final Pai nutritivo -->
+                
+                          <!-- inicio pai critico -->
+                          <form class="form-horizontal">
+    
+                            <h4> <p> 21) Despreza os outros?</p> </h4>
+                             
+                            <div class="radio">
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                  <p>Muito raramente </p>
+                                </font></font></label>
+                              </div>
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                 <p> As vezes </p>
+                                </font></font></label>
+                              </div>
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                  <p>  Frequentemente </p>
+                                </font></font></label>
+                                <div>
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                  <p> sempre</p>
+                                </font></font></label>
+                                </div>
+                            </div>
+                          </form>
+    
+                          <form class="form-horizontal">
+    
+                            <h4> <p> 22) Valoriza as tradições? </p> </h4>
+                             
+                            <div class="radio">
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                  <p>Muito raramente </p>
+                                </font></font></label>
+                              </div>
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                 <p> As vezes </p>
+                                </font></font></label>
+                              </div>
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                  <p>  Frequentemente </p>
+                                </font></font></label>
+                                <div>
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                  <p> sempre</p>
+                                </font></font></label>
+                                </div>
+                            </div>
+                          </form>
+    
+                          <form class="form-horizontal">
+    
+                            <h4> <p> 23) É crítico em relação às coisas e fatos </p> </h4>
+                             
+                            <div class="radio">
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                  <p>Muito raramente </p>
+                                </font></font></label>
+                              </div>
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                 <p> As vezes </p>
+                                </font></font></label>
+                              </div>
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                  <p>  Frequentemente </p>
+                                </font></font></label>
+                                <div>
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                  <p> sempre</p>
+                                </font></font></label>
+                                </div>
+                            </div>
+                          </form>
+    
+                          <form class="form-horizontal">
+    
+                            <h4> <p> 24) Valoriza o senso de Responsabilidade</p> </h4>
+                             
+                            <div class="radio">
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                  <p>Muito raramente </p>
+                                </font></font></label>
+                              </div>
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                 <p> As vezes </p>
+                                </font></font></label>
+                              </div>
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                  <p>  Frequentemente </p>
+                                </font></font></label>
+                                <div>
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                  <p> sempre</p>
+                                </font></font></label>
+                                </div>
+                            </div>
+                          </form>
+    
+                          <form class="form-horizontal">
+    
+                            <h4> <p> 25) É moralista </p> </h4>
+                             
+                            <div class="radio">
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                  <p>Muito raramente </p>
+                                </font></font></label>
+                              </div>
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                 <p> As vezes </p>
+                                </font></font></label>
+                              </div>
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                  <p>  Frequentemente </p>
+                                </font></font></label>
+                                <div class = "radio">
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                  <p> sempre</p>
+                                </font></font></label>
+                                </div>
+                            </div>
+                          </form>
+              </div>
+              {% for pergunta in questionario %}
+              <div class="card mb-3">
+                    <div class ="card-header">
+                      {{pergunta.pergunta}} 
+                    </div>
+                    <div class = "container">
+                    <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                          <p class="card-text" >Muito raramente </p>
+                        </font></font></label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                         <p class="card-text" > As vezes </p>
+                        </font></font></label>
+                      </div>
+
+                      <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                            <p class="card-text" >Frequentemente</p>
+                          </font></font></label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                           <p class="card-text" > sempre </p>
+                          </font></font></label>
+                        </div>
+                      </div>
+                        <p class="card-text">Nome do Teste : {{pergunta.get_tipo_display}}</p>
+                        <a href="editar_tarefa/{{x.id}}">Alterar</a>
+                        <a href="remover_tarefa/{{x.id}}">Remover</a>
+                       
+                    </div>
+                
+              {% endfor %}
+
+
+    <div class = "form_group">
+            <input type = "submit" value = "salvar">
+    </div>
+ 
+</form>
+
+<section class="content" >
+
+        <ul class="pagination" style="justify-content: center"> 
+            <li class="page-item"><a class="page-link" href="ego">1</a></li>
+            <li class="page-item"><a class="page-link" href="ego2">2</a></li>
+          </ul>
+    
+    </section>
+
+
+</div>
+{% endblock conteudo%}

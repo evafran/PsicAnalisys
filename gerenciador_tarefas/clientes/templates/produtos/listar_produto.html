@@ -1,0 +1,32 @@
+{% extends "clientes/base.html" %}
+
+{% block title %}
+Produto
+{% endblock title %}
+
+{% block content %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>descricao</th>
+                <th>valor</th>
+
+            </tr>
+        </thead>
+        <tbody>
+           
+            <tr>
+                <td><a href="#">{{produto.nome}}</a></td>
+                <td>{{produto.descricao}}</td>
+                <td>{{produto.valor}}</td>
+               
+            </tr>
+          
+        </tbody>
+    </table>
+
+    <a href="{% url 'cadastrar_produto' %}"><button class="btn btn-primary">Cadastrar</button></a>
+    <a href="{% url 'listar_produtos' %}"><button class="btn btn-primary">Voltar</button></a>
+
+{% endblock content %}
